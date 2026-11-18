@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>东北冬季极寒徒步（-15°C ~ -35°C）硬壳冲锋衣外层采购指南｜A4打印终稿</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+
+    * { box-sizing: border-box; }
+
+    :root {
+      --bg-surface: #FFFFFF;
+      --bg-paper: #F6F4EF;
+      --bg-tint: #EFF2F6;
+      --bg-cobalt-soft: #EDF3FB;
+      --bg-amber-soft: #FFF8EC;
+      --bg-pine-soft: #F0F7F2;
+      --bg-crimson-soft: #FEF2F2;
+      --ink-primary: #12171D;
+      --ink-secondary: #3E4854;
+      --ink-muted: #5C6875;
+      --border-hair: #D4DBE3;
+      --accent-cobalt: #1E4E8C;
+      --accent-ochre: #B45309;
+      --accent-pine: #166534;
+      --accent-crimson: #991B1B;
+      --font-serif: "Noto Serif CJK SC", "Source Han Serif SC", Georgia, serif;
+      --font-sans: "Noto Sans CJK SC", "PingFang SC", -apple-system, sans-serif;
+      --font-mono: "Noto Sans Mono CJK SC", ui-monospace, Menlo, monospace;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #E2E6EB;
+      font-family: var(--font-sans);
+      color: var(--ink-primary);
+      font-size: 9.8px;
+      line-height: 1.42;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    a { color: var(--accent-cobalt); text-decoration: none; font-weight: 600; }
+    h1, h2, h3, h4 { font-family: var(--font-serif); margin: 0; color: var(--ink-primary); }
+    p { margin: 0; }
+    .mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+
+    .a4-page {
+      width: 210mm;
+      height: 297mm;
+      margin: 0 auto 10px auto;
+      padding: 9mm 11.5mm 8.5mm 11.5mm;
+      background: #FFFFFF;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      page-break-after: always;
+      break-after: page;
+    }
+    .a4-page:last-of-type {
+      page-break-after: auto;
+      break-after: auto;
+      margin-bottom: 0;
+    }
+
+    @media print {
+      html, body { background: #FFFFFF; }
+      .a4-page { margin: 0; box-shadow: none; }
+    }
+
+    /* Running Header & Footer */
+    .running-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 8.4px;
+      color: var(--ink-muted);
+      padding-bottom: 4.5px;
+      border-bottom: 1px solid var(--border-hair);
+      margin-bottom: 7px;
+      flex-shrink: 0;
+    }
+
+    .running-foot {
+      margin-top: auto;
+      padding-top: 5px;
+      border-top: 1px solid var(--border-hair);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 8.4px;
+      color: var(--ink-muted);
+      flex-shrink: 0;
+    }
+
+    /* Page 1 Masthead */
+    .masthead {
+      background: var(--ink-primary);
+      color: #FFFFFF;
+      border-top: 3.5px solid var(--accent-ochre);
+      border-radius: 5px;
+      padding: 11px 16px 12px 16px;
+      margin-bottom: 9px;
+      flex-shrink: 0;
+    }
+    .masthead-kicker {
+      font-family: var(--font-mono);
+      font-size: 8.5px;
+      color: #E2B07E;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+    .masthead h1 {
+      color: #FFFFFF;
+      font-size: 19.5px;
+      line-height: 1.24;
+      margin-bottom: 3px;
+    }
+    .masthead-sub {
+      color: #D2DCE6;
+      font-size: 10px;
+    }
+
+    /* Page 1 Top Info Pair */
+    .top-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9px;
+      margin-bottom: 10px;
+      flex-shrink: 0;
+    }
+    .info-box {
+      background: var(--bg-paper);
+      border: 1px solid var(--border-hair);
+      border-radius: 5px;
+      padding: 8px 11px;
+    }
+    .info-box.audit-theme {
+      background: var(--bg-pine-soft);
+      border-color: #BDD8C3;
+    }
+    .info-box-title {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: var(--accent-cobalt);
+      margin-bottom: 5px;
+    }
+    .info-box.audit-theme .info-box-title { color: var(--accent-pine); }
+    .kv-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px 10px;
+      font-size: 9.2px;
+      margin-bottom: 5px;
+    }
+    .kv-grid b { color: var(--ink-primary); }
+    .info-foot {
+      font-size: 8.6px;
+      color: var(--ink-secondary);
+      border-top: 1px dashed var(--border-hair);
+      padding-top: 4px;
+      line-height: 1.38;
+    }
+
+    /* Section Headings on Page 1 & Tables */
+    .sec-title-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1.5px solid var(--accent-cobalt);
+      padding-bottom: 3px;
+      margin-bottom: 7px;
+      flex-shrink: 0;
+    }
+    .sec-title-bar h2 {
+      font-size: 12.8px;
+      color: var(--ink-primary);
+    }
+    .sec-title-bar span {
+      font-size: 8.6px;
+      color: var(--ink-muted);
+    }
+
+    /* 4-Layer Strip */
+    .layer-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 7px;
+      margin-bottom: 10px;
+      flex-shrink: 0;
+    }
+    .layer-box {
+      border: 1px solid var(--border-hair);
+      border-radius: 5px;
+      padding: 7px 8px;
+      background: #FFFFFF;
+    }
+    .layer-box.focus {
+      background: var(--bg-cobalt-soft);
+      border: 1.5px solid var(--accent-cobalt);
+    }
+    .layer-k { font-size: 9px; font-weight: 700; color: var(--accent-cobalt); margin-bottom: 2px; }
+    .layer-box.focus .layer-k { color: var(--accent-ochre); }
+    .layer-s { font-size: 9.4px; font-weight: 700; margin-bottom: 3px; line-height: 1.3; }
+    .layer-b { font-size: 8.5px; color: var(--ink-secondary); line-height: 1.36; }
+
+    /* 3 Ultimate Trio */
+    .ult-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 10px;
+      flex-shrink: 0;
+    }
+    .ult-card {
+      border: 1.2px solid var(--accent-ochre);
+      border-radius: 5px;
+      padding: 8px 9px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      background: #FFFFFF;
+    }
+    .ult-kicker { font-size: 8.8px; font-weight: 700; color: var(--accent-ochre); }
+    .ult-top { display: flex; gap: 7px; align-items: center; }
+    .ult-thumb {
+      width: 44px;
+      height: 52px;
+      border: 1px solid var(--border-hair);
+      border-radius: 3px;
+      padding: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      background: #FFFFFF;
+    }
+    .ult-thumb img { max-width: 100%; max-height: 100%; object-fit: contain; }
+    .ult-name { font-family: var(--font-serif); font-size: 10.3px; font-weight: 700; line-height: 1.28; }
+    .ult-meta { font-family: var(--font-mono); font-size: 8.2px; color: var(--ink-muted); margin-top: 2px; }
+    .ult-summary { font-size: 8.6px; color: var(--ink-secondary); line-height: 1.38; }
+    .ult-size {
+      margin-top: auto;
+      background: var(--bg-amber-soft);
+      border-left: 2.5px solid var(--accent-ochre);
+      padding: 4px 6px;
+      font-size: 8.5px;
+      font-weight: 700;
+      color: #7C2D12;
+      border-radius: 0 3px 3px 0;
+    }
+
+    /* Compact Tables */
+    table.p-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8.6px;
+      border: 1px solid var(--border-hair);
+      flex-shrink: 0;
+    }
+    table.p-table th {
+      background: var(--ink-primary);
+      color: #FFFFFF;
+      text-align: left;
+      padding: 4.5px 6px;
+      font-weight: 700;
+      font-size: 8.3px;
+    }
+    table.p-table td {
+      padding: 4.2px 6px;
+      border-bottom: 1px solid var(--border-hair);
+      vertical-align: top;
+      line-height: 1.35;
+    }
+    table.p-table tr.hl td { background: var(--bg-amber-soft); }
+
+    /* Category Divider Header on Product Pages */
+    .cat-banner {
+      background: var(--bg-tint);
+      border-left: 4px solid var(--ink-primary);
+      padding: 5px 10px;
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 6.5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-shrink: 0;
+    }
+    .cat-banner h2 { font-size: 13px; }
+    .cat-banner span { font-size: 8.6px; color: var(--ink-secondary); }
+
+    /* Product Dossier Card in Print */
+    .dossier {
+      border: 1px solid var(--border-hair);
+      border-radius: 6px;
+      padding: 9px 11px;
+      margin-bottom: 8px;
+      background: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      break-inside: avoid;
+    }
+    .dossier.is-ult {
+      border: 1.4px solid var(--accent-ochre);
+    }
+    .dossier-top {
+      display: flex;
+      gap: 11px;
+      align-items: flex-start;
+    }
+    .dossier-img {
+      width: 78px;
+      height: 92px;
+      border: 1px solid var(--border-hair);
+      border-radius: 4px;
+      padding: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #FFFFFF;
+      flex-shrink: 0;
+    }
+    .dossier-img img { max-width: 100%; max-height: 100%; object-fit: contain; }
+    .dossier-head { flex: 1; min-width: 0; }
+    .d-pills { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; margin-bottom: 3px; }
+    .pill-d { font-family: var(--font-mono); font-size: 8.2px; font-weight: 700; padding: 1.5px 6px; border-radius: 3px; background: var(--ink-primary); color: #FFFFFF; }
+    .pill-badge { font-size: 8.2px; font-weight: 700; padding: 1.5px 6px; border-radius: 3px; color: #FFFFFF; background: var(--accent-cobalt); }
+    .pill-badge.ult { background: var(--accent-ochre); }
+    .pill-badge.warn { background: var(--accent-crimson); }
+    .d-sku-top { font-family: var(--font-mono); font-size: 8.3px; color: var(--ink-muted); }
+    .dossier-head h3 { font-size: 12.2px; line-height: 1.25; margin-bottom: 2px; }
+    .d-price { font-size: 10.6px; font-weight: 700; color: var(--accent-ochre); }
+    .d-price small { font-size: 8.5px; color: var(--ink-muted); font-weight: 400; margin-left: 6px; }
+
+    .d-specs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3px 10px;
+      background: var(--bg-tint);
+      border-radius: 4px;
+      padding: 5px 8px;
+      font-size: 8.5px;
+    }
+    .d-specs-grid b { color: var(--ink-muted); font-weight: 600; margin-right: 4px; }
+
+    .d-two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7px;
+    }
+    .d-off-box {
+      background: #FAFBFD;
+      border: 1px solid var(--border-hair);
+      border-radius: 4px;
+      padding: 5px 7px;
+      font-size: 8.4px;
+      color: var(--ink-secondary);
+      line-height: 1.38;
+    }
+    .d-off-title { font-weight: 700; color: var(--ink-primary); margin-bottom: 2px; font-size: 8.6px; }
+    .d-size-box {
+      background: var(--bg-cobalt-soft);
+      border-left: 2.5px solid var(--accent-cobalt);
+      border-radius: 0 4px 4px 0;
+      padding: 5px 7px;
+      font-size: 8.4px;
+      color: var(--ink-primary);
+      line-height: 1.38;
+    }
+    .d-size-title { font-weight: 700; color: var(--accent-cobalt); margin-bottom: 2px; font-size: 8.6px; }
+
+    .d-rationale {
+      margin: 0;
+      padding-left: 14px;
+      font-size: 8.5px;
+      color: var(--ink-primary);
+      line-height: 1.38;
+    }
+    .d-rationale li { margin-bottom: 2px; }
+
+    .d-audit-ledger {
+      border: 1px solid #C6DEC9;
+      border-radius: 4px;
+      overflow: hidden;
+      font-size: 8.2px;
+      background: var(--bg-pine-soft);
+    }
+    .d-audit-row {
+      display: flex;
+      align-items: stretch;
+      border-bottom: 1px solid #D9EAD9;
+    }
+    .d-audit-row:last-child { border-bottom: none; }
+    .d-audit-k {
+      width: 68px;
+      flex-shrink: 0;
+      background: #1B4D2B;
+      color: #FFFFFF;
+      font-weight: 700;
+      padding: 2.5px 5px;
+      display: flex;
+      align-items: center;
+      font-size: 8px;
+    }
+    .d-audit-v {
+      flex: 1;
+      padding: 2.5px 7px;
+      color: #1A3623;
+      line-height: 1.34;
+    }
+
+    .d-links-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 12px;
+      align-items: center;
+      font-size: 8.3px;
+      padding-top: 2px;
+    }
+    .d-sku-flag {
+      margin-left: auto;
+      font-family: var(--font-mono);
+      font-size: 7.8px;
+      padding: 1px 5px;
+      border-radius: 3px;
+      background: var(--bg-pine-soft);
+      color: var(--accent-pine);
+      border: 1px solid #B7D7BF;
+    }
+    .d-sku-flag.warn {
+      background: var(--bg-amber-soft);
+      color: var(--accent-ochre);
+      border-color: #EBD1A7;
+    }
+
+    /* Page 7 & 8 extras */
+    .rules-box {
+      margin-top: 8px;
+      background: var(--bg-amber-soft);
+      border: 1.2px solid var(--accent-ochre);
+      border-radius: 5px;
+      padding: 7px 10px;
+      flex-shrink: 0;
+    }
+    .rules-box h3 { font-size: 10.5px; color: var(--accent-ochre); margin-bottom: 5px; }
+    .rules-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 9px;
+      font-size: 8.5px;
+      line-height: 1.38;
+    }
+
+    .grid-2x2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 7px;
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+    .elim-item {
+      background: var(--bg-crimson-soft);
+      border: 1px solid #F3C6C6;
+      border-radius: 4px;
+      padding: 6px 8px;
+      font-size: 8.3px;
+      line-height: 1.36;
+    }
+    .elim-item h4 { font-size: 9.2px; color: var(--accent-crimson); margin-bottom: 2px; }
+
+    .finding-item {
+      background: var(--bg-pine-soft);
+      border: 1px solid #C6DEC9;
+      border-left: 3px solid var(--accent-pine);
+      border-radius: 4px;
+      padding: 6px 8px;
+      font-size: 8.3px;
+      line-height: 1.36;
+    }
+    .finding-item.warn {
+      background: var(--bg-crimson-soft);
+      border-color: #F3C6C6;
+      border-left-color: var(--accent-crimson);
+    }
+    .finding-k { font-family: var(--font-mono); font-size: 7.9px; font-weight: 700; color: var(--accent-pine); margin-bottom: 2px; }
+    .finding-item.warn .finding-k { color: var(--accent-crimson); }
+    .finding-item h4 { font-size: 9.2px; margin-bottom: 2px; }
+
+    .deliverable-strip {
+      margin-top: 8px;
+      background: var(--bg-tint);
+      border: 1px solid var(--border-hair);
+      border-radius: 5px;
+      padding: 7px 10px;
+      font-size: 8.4px;
+      line-height: 1.45;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="print-root"></div>
+
+  <script src="./data.js"></script>
+  <script>
+    (function () {
+      const D = window.HARDSHELL_DATA;
+      if (!D) return;
+      const pMap = Object.fromEntries(D.products.map(p => [p.id, p]));
+      const root = document.getElementById('print-root');
+      const totalPages = 8;
+
+      function headHtml() {
+        return `
+          <div class="running-head">
+            <span>NE-WINTER EXTREME COLD HARDSHELL BUYING GUIDE (-15°C ~ -35°C)</span>
+            <span>男 180cm / 80kg（鞋 EU44 · 裤 48）· 美利奴+黑冰F1106KH+波司登适配版</span>
+          </div>`;
+      }
+
+      function footHtml(pageNo) {
+        return `
+          <div class="running-foot">
+            <span>东北冬季极寒徒步 · 硬壳冲锋衣外层深度采购指南（10 款全横向对比与反 AI 软文审计）</span>
+            <span class="mono">第 ${pageNo} / ${totalPages} 页</span>
+          </div>`;
+      }
+
+      function dossierCard(p) {
+        const badgeCls = p.isUltimate ? 'ult' : (p.ultimateTitle.includes('⚠️') ? 'warn' : '');
+        return `
+          <article class="dossier ${p.isUltimate ? 'is-ult' : ''}">
+            <div class="dossier-top">
+              <div class="dossier-img"><img src="${p.image}" alt="${p.brandCn}"></div>
+              <div class="dossier-head">
+                <div class="d-pills">
+                  <span class="pill-d">#${String(p.rank).padStart(2, '0')} · ${p.categoryLabel}</span>
+                  <span class="pill-badge ${badgeCls}">${p.ultimateTitle}</span>
+                  <span class="d-sku-top">SKU: ${p.sku}</span>
+                </div>
+                <h3>${p.brandCn} (${p.brand}) · ${p.name}</h3>
+                <div class="d-price">${p.price.display} <small>${p.price.officialRef}</small></div>
+              </div>
+            </div>
+
+            <div class="d-specs-grid">
+              <div><b>防水薄膜：</b>${p.specs.membrane}</div>
+              <div><b>面布/D数：</b>${p.specs.faceFabric}</div>
+              <div><b>防水/透气：</b>${p.specs.waterproofMm.split('（')[0]} | ${p.specs.breathabilityMetric.split('（')[0]}</div>
+              <div><b>成衣克重：</b>${p.specs.garmentWeight} ｜ ${p.specs.pockets.split('（')[0]}</div>
+              <div><b>拉链散热：</b>${p.specs.zippers}</div>
+              <div><b>风帽/雪裙：</b>${p.specs.hoodAndSkirt}</div>
+            </div>
+
+            <div class="d-two-col">
+              <div class="d-off-box">
+                <div class="d-off-title">官方核心说明</div>
+                <div>${p.officialDesc}</div>
+              </div>
+              <div class="d-size-box">
+                <div class="d-size-title">180/80 叠穿黑冰 F1106KH 选码：${p.size180_80.pick.split('（')[0]}</div>
+                <div>${p.size180_80.detail}</div>
+              </div>
+            </div>
+
+            <ul class="d-rationale">
+              ${p.rationale.map(r => `<li>${r}</li>`).join('')}
+            </ul>
+
+            <div class="d-audit-ledger">
+              <div class="d-audit-row">
+                <div class="d-audit-k">全平台评论盘</div>
+                <div class="d-audit-v">${p.audit.totalReviewsPlatform}</div>
+              </div>
+              <div class="d-audit-row">
+                <div class="d-audit-k">本次精读样本</div>
+                <div class="d-audit-v">精读实评 <b>${p.audit.userReviewsRead} 条</b>${p.audit.qaRead ? ` + 官方问答 <b>${p.audit.qaRead} 组</b>` : ''} + 专业/渠道测评 <b>${p.audit.proTestsRead} 篇</b>（${p.audit.proTestSources}）</div>
+              </div>
+              <div class="d-audit-row">
+                <div class="d-audit-k">关键原声/防骗</div>
+                <div class="d-audit-v">${p.audit.userReviewQuotes[0]}；${p.audit.credibilityAndAdFilter}</div>
+              </div>
+            </div>
+
+            <div class="d-links-row">
+              <a href="${p.urls.official}">官网/技术归档 ↗</a>
+              <a href="${p.urls.taobao}">${p.urls.taobaoLabel}</a>
+              <a href="${p.urls.jd}">${p.urls.jdLabel}</a>
+              <span class="d-sku-flag ${p.skuMatchOk ? '' : 'warn'}">${p.skuMatchOk ? '✓ 链接与SKU一致' : '⚠ 注意同链混售防坑'}</span>
+            </div>
+          </article>
+        `;
+      }
+
+      // PAGE 1
+      const page1 = `
+        <section class="a4-page">
+          <header class="masthead">
+            <div class="masthead-kicker">Alpine Technical Field Dossier · 2026.11 · -15°C ~ -35°C Extreme Cold</div>
+            <h1>${D.meta.title}</h1>
+            <div class="masthead-sub">${D.meta.subtitle}</div>
+          </header>
+
+          <div class="top-pair">
+            <div class="info-box">
+              <div class="info-box-title">定制采购人身体参数与叠穿边界</div>
+              <div class="kv-grid">
+                <div><b>性别/身高/体重：</b>男 · 180 cm / 80 kg</div>
+                <div><b>足/下装参考码：</b>鞋 EU 44 · 裤 48 码</div>
+                <div><b>推算净胸围：</b>${D.meta.userProfile.estimatedChestCm}</div>
+                <div><b>硬壳目标衣胸：</b>122 – 126 cm（兼容厚中层）</div>
+              </div>
+              <div class="info-foot"><b>既有装备边界：</b>${D.meta.userProfile.existingKit}。因 F1106KH 自带连帽且有立体蓬松絮片，L3 外壳领口与肩腋必须留余量防双帽卡颈；停步大休直接将波司登罩在硬壳最外层。</div>
+            </div>
+
+            <div class="info-box audit-theme">
+              <div class="info-box-title">本次深度内容审计统计（真实可追溯 · 杜绝 AI 水军）</div>
+              <div class="kv-grid">
+                <div><b>覆盖阵营/款数：</b>三大类共 10 款代表型号</div>
+                <div><b>平台总评基数：</b>${D.meta.auditTotals.officialReviewsTracked}</div>
+                <div><b>逐条精读实评：</b><b>${D.meta.auditTotals.individualUserReviewsRead} 条</b>（含 ${D.meta.auditTotals.officialQAsRead} 组问答）</div>
+                <div><b>独立/渠道实测：</b><b>${D.meta.auditTotals.independentFieldTestsRead} 篇外媒</b> + ${D.meta.auditTotals.channelAndForumAuditsRead} 份真伪审查</div>
+              </div>
+              <div class="info-foot"><b>反伪造防广告机制：</b>实查并剔除标有「内容由AI生成」之 SMZDM 热搜伪测评（含虚报 MONT X 619g 错数）、剥离淘宝三合一混算及 B 站代言软广；JD 部分动态抽屉页因平台登录墙限制未强行抓包，均以公开直链及官方索引实据为准。</div>
+            </div>
+          </div>
+
+          <div class="sec-title-bar">
+            <h2>一、东北极寒（-15°C ~ -35°C）3+1 穿衣体系定位</h2>
+            <span>L3 外壳的核心任务：抗狂风 + 强泄汗 + 防粉雪剐蹭</span>
+          </div>
+          <div class="layer-grid-4">
+            ${D.systemGuide.map((l, idx) => `
+              <div class="layer-box ${idx === 2 ? 'focus' : ''}">
+                <div class="layer-k">${l.layer}</div>
+                <div class="layer-s">${l.spec}</div>
+                <div class="layer-b">${l.advice180_80}</div>
+              </div>
+            `).join('')}
+          </div>
+
+          <div class="sec-title-bar">
+            <h2>二、三大价位阵营 · 终极推荐定案</h2>
+            <span>180/80 叠加黑冰 F1106KH 直接拍板清单一览</span>
+          </div>
+          <div class="ult-grid-3">
+            ${D.ultimates.map(u => {
+              const p = pMap[u.productId];
+              return `
+                <article class="ult-card">
+                  <div class="ult-kicker">★ ${u.tierTitle}</div>
+                  <div class="ult-top">
+                    <div class="ult-thumb"><img src="${p.image}" alt="${p.brandCn}"></div>
+                    <div>
+                      <div class="ult-name">${p.brandCn} ${p.brand}<br>${p.name.split('（')[0]}</div>
+                      <div class="ult-meta">${u.tag}</div>
+                    </div>
+                  </div>
+                  <div class="ult-summary">${u.summary}</div>
+                  <div class="ult-size">180/80 选码：${u.pick180_80}</div>
+                </article>
+              `;
+            }).join('')}
+          </div>
+
+          <div class="sec-title-bar">
+            <h2>三、180/80 东北三大极寒工况速配对照表</h2>
+            <span>与已有「美利奴 + F1106KH + 波司登」直接耦合操作</span>
+          </div>
+          <table class="p-table">
+            <thead>
+              <tr>
+                <th style="width:27%;">东北实测场景与温度梯度</th>
+                <th style="width:29%;">推荐穿法组合</th>
+                <th>核心功能件优先级与避坑操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${D.regimes.map(r => `
+                <tr>
+                  <td><b>${r.title}</b></td>
+                  <td><span class="mono" style="color:var(--accent-ochre);font-weight:700;">${r.combo}</span></td>
+                  <td>${r.detail}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+
+          ${footHtml(1)}
+        </section>
+      `;
+
+      // PAGES 2-6
+      const catHeaders = {
+        'deca-mh500': {
+          title: '类别一：迪卡侬基线（高透明实测门槛 · 共 1 款）',
+          sub: '¥599.9 价位唯一全压胶 3L + RET=6 高透湿 + 29cm 腋下拉链守门员，实体店穿内胆直试'
+        },
+        'val-torrentshell': {
+          title: '类别二：平价口碑阵营（¥1,150–¥2,350 · 共 4 款）',
+          sub: '聚焦正统防水膜与真实买家差评排查，剔除宣传噱头与卡拉链/减配陷阱'
+        },
+        'top-kailas-montx': {
+          title: '类别三：顶级性能阵营（¥2,400–¥9,999 · 共 5 款）',
+          sub: '全面切换新代 GORE-TEX PRO ePE 无氟体系：国产雪山标杆 + 四大阿尔卑斯重器对比'
+        }
+      };
+
+      const cardPairs = [
+        [0, 1], // Page 2: #01 MH500 + #02 Torrentshell
+        [2, 3], // Page 3: #03 PELLIOT + #04 Pioneer Camp
+        [4, 5], // Page 4: #05 Northland + #06 Kailas MONT X
+        [6, 7], // Page 5: #07 Triolet + #08 Norrona
+        [8, 9]  // Page 6: #09 Beta AR + #10 Mammut Eiger
+      ];
+
+      const dossierPages = cardPairs.map((pair, idx) => {
+        const pageNum = idx + 2;
+        const cardsHtml = pair.map(pi => {
+          const p = D.products[pi];
+          const ch = catHeaders[p.id];
+          const bannerHtml = ch ? `
+            <div class="cat-banner">
+              <h2>${ch.title}</h2>
+              <span>${ch.sub}</span>
+            </div>` : '';
+          return bannerHtml + dossierCard(p);
+        }).join('');
+        return `<section class="a4-page">${headHtml()}${cardsHtml}${footHtml(pageNum)}</section>`;
+      }).join('');
+
+      // PAGE 7: Multi-dimensional Matrix + Sizing Rules + Eliminated
+      const page7 = `
+        <section class="a4-page">
+          ${headHtml()}
+          <div class="sec-title-bar" style="margin-bottom:5px;">
+            <h2>四、10 款产品核心参数与口碑多维度横评总表</h2>
+            <span>★ 高亮行 = 各价位阵营终极推荐（加注 凯乐石 MONT X 为 3000 元内带雪裙雪山首选）</span>
+          </div>
+          <table class="p-table" style="font-size:7.9px;">
+            <thead>
+              <tr>
+                <th style="width:16%;padding:3.5px 5px;">品牌 / 产品 / SKU</th>
+                <th style="width:8.5%;padding:3.5px 4px;">阵营定位</th>
+                <th style="width:9.5%;padding:3.5px 4px;">参考实付价</th>
+                <th style="width:18%;padding:3.5px 5px;">膜与面布D数</th>
+                <th style="width:6.5%;padding:3.5px 4px;">克重</th>
+                <th style="width:20.5%;padding:3.5px 5px;">拉链 / 风帽 / 雪裙</th>
+                <th style="width:6.5%;padding:3.5px 4px;">防水/透</th>
+                <th style="width:4.5%;padding:3.5px 4px;">风雪</th>
+                <th style="width:6%;padding:3.5px 4px;">选码</th>
+                <th style="width:4%;padding:3.5px 4px;">总分</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${D.products.map(p => {
+                const wText = /^\d/.test(p.specs.garmentWeight) ? p.specs.garmentWeight.split('（')[0] : '未公开';
+                const szShort = p.size180_80.pick.split('（')[0].replace(/^(建议试穿|建议选|必选|精准选|选)\s*/,'');
+                return `
+                <tr class="${p.isUltimate ? 'hl' : ''}">
+                  <td style="padding:3px 5px;line-height:1.26;"><b>${p.isUltimate ? '★' : ''}#${p.rank} ${p.brandCn}</b> · ${p.name.split('（')[0]}<br><span class="mono" style="font-size:7.2px;color:#5C6875;">${p.sku.split('（')[0]}</span></td>
+                  <td style="padding:3px 4px;line-height:1.26;">${p.categoryLabel}${p.isUltimate ? '<br><b style="color:var(--accent-ochre);">终极推荐</b>' : ''}</td>
+                  <td class="mono" style="padding:3px 4px;line-height:1.26;">${p.price.display.split('（')[0]}</td>
+                  <td style="padding:3px 5px;line-height:1.26;">${p.specs.membrane.split('（')[0]}<br><span style="color:#5C6875;">${p.specs.faceFabric.split('（')[0]}</span></td>
+                  <td class="mono" style="padding:3px 4px;line-height:1.26;">${wText}</td>
+                  <td style="padding:3px 5px;line-height:1.26;">${p.specs.zippers.replace('防水主拉链','主链')}<br><span style="color:#5C6875;">${p.specs.hoodAndSkirt}</span></td>
+                  <td class="mono" style="padding:3px 4px;line-height:1.26;">${p.scores.waterproof}/${p.scores.breathability}</td>
+                  <td class="mono" style="padding:3px 4px;line-height:1.26;">${p.scores.snowDefense}</td>
+                  <td style="padding:3px 4px;line-height:1.26;"><b>${szShort}</b></td>
+                  <td class="mono" style="padding:3px 4px;line-height:1.26;"><b>${p.scores.overall}</b></td>
+                </tr>
+              `;}).join('')}
+            </tbody>
+          </table>
+
+          <div class="rules-box" style="margin-top:6px;padding:6px 9px;">
+            <h3 style="margin-bottom:3.5px;">180 cm / 80 kg 叠穿「美利奴 + 黑冰 F1106KH 连帽棉服」选码三大铁律</h3>
+            <div class="rules-3" style="font-size:8.2px;line-height:1.33;">
+              <div><b>1. 国产偏修身必加码，宽版/欧美正装锁 L：</b>迪卡侬 MH500（官旗注明配内胆加码）与拓路者雪鹰、诺诗兰飓风均需选 <b>XL</b>；伯希和偏大先试 <b>L</b>；凯乐石 MONT X (L=124cm衣胸)、始祖鸟新改版 Beta AR、老人头 1604-25、巴塔 Triolet、猛犸象艾格全部正选 <b>L</b>。</div>
+              <div><b>2. 妥善化解「双连帽顶脖」窘境：</b>F1106KH 自带兜帽！始祖鸟 Beta AR 独立 DropHood 立领把领喉隔绝度拉到最高；老人头/凯乐石/猛犸象/巴塔 Triolet 等头盔兼容帽后帽腔容积大，容纳双帽完全不扯紧前喉。</div>
+              <div><b>3. C0 非氟外层防泼水「冬季洗护铁律」：</b>本表所有 2025–2026 新代 ePE / H2No 无氟拨水外层极畏油脂积灰！行前若感觉前襟水渍变深“阴水”（非渗水），务必中性洗洁精机洗后低温滚筒烘干复原拨水珠。</div>
+            </div>
+          </div>
+
+          <div class="sec-title-bar" style="margin-top:7px;margin-bottom:5px;">
+            <h2>五、本次调研遭主动淘汰及高风险避坑的反面型号样本</h2>
+            <span>比“买哪件”更重要的「绝对不买清单」</span>
+          </div>
+          <div class="grid-2x2" style="margin-top:4px;gap:6px;">
+            ${D.eliminatedCandidates.map(e => `
+              <div class="elim-item" style="padding:5px 7.5px;font-size:8.1px;line-height:1.32;">
+                <h4>[已淘汰/规避] ${e.name}（${e.price}）</h4>
+                <p>${e.reason}</p>
+              </div>
+            `).join('')}
+          </div>
+
+          ${footHtml(7)}
+        </section>
+      `;
+
+      // PAGE 8: Forensic Audit + Complete Link-to-SKU + Deliverables
+      const page8 = `
+        <section class="a4-page">
+          ${headHtml()}
+          <div class="sec-title-bar">
+            <h2>六、全流程反 AI 伪测评审查记录</h2>
+            <span>精读 ${D.meta.auditTotals.individualUserReviewsRead} 条买家实评 + ${D.meta.auditTotals.officialQAsRead} 组 Q&amp;A + ${D.meta.auditTotals.independentFieldTestsRead} 篇外媒实验室</span>
+          </div>
+          <div class="grid-2x2" style="margin-bottom:9px;">
+            ${D.auditFindings.map(f => `
+              <div class="finding-item ${f.isWarning ? 'warn' : ''}">
+                <div class="finding-k">${f.type}</div>
+                <h4>核验对象：${f.target}</h4>
+                <p>${f.finding}</p>
+              </div>
+            `).join('')}
+          </div>
+
+          <div class="sec-title-bar">
+            <h2>七、逐款「链接与实际推荐 SKU 一致性」及评论核查总账</h2>
+            <span>京东部分动态交互页因需账号登录，本表忠实采用公开直达链接与官旗真实核对</span>
+          </div>
+          <table class="p-table">
+            <thead>
+              <tr>
+                <th style="width:18%;">序号 / 品牌 / 核定型号</th>
+                <th style="width:27%;">全网评价总盘（分源列明不注水）</th>
+                <th style="width:17%;">本次精读实审样本</th>
+                <th style="width:13%;">电商核对直达链</th>
+                <th style="width:25%;">SKU 一致性与买前排雷批注</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${D.products.map(p => `
+                <tr>
+                  <td><b>#${p.rank} ${p.brandCn}</b><br><span class="mono" style="font-size:7.6px;">${p.sku.split('（')[0]}</span></td>
+                  <td>${p.audit.totalReviewsPlatform}</td>
+                  <td class="mono">实评 <b>${p.audit.userReviewsRead}</b> 条${p.audit.qaRead ? ` + ${p.audit.qaRead}问` : ''}<br>测评/档案 <b>${p.audit.proTestsRead}</b> 篇</td>
+                  <td><a href="${p.urls.taobao}">淘宝/天猫直链 ↗</a><br><a href="${p.urls.jd}">京东详情页 ↗</a></td>
+                  <td style="color:${p.skuMatchOk ? '#166534' : '#991B1B'};font-weight:600;">${p.skuVerification}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+
+          <div class="deliverable-strip">
+            <b>在线交互版网页与文档存档路径（可点击跳转）：</b><br>
+            • 在线交互筛选与排序网页（GitHub Pages）：<a href="${D.meta.liveUrl}">${D.meta.liveUrl}</a><br>
+            • 源码仓库（GitHub Repository）：<a href="${D.meta.repoUrl}">${D.meta.repoUrl}</a><br>
+            • 云端备份 PDF 链接（Google Drive）：${D.meta.drivePdfUrl ? `<a href="${D.meta.drivePdfUrl}">${D.meta.drivePdfUrl}</a>` : '将在云盘入库后写入最终在线与下载版本'}
+          </div>
+
+          ${footHtml(8)}
+        </section>
+      `;
+
+      root.innerHTML = page1 + dossierPages + page7 + page8;
+    })();
+  </script>
+</body>
+</html>
